@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+     "start": "cds run",
+     "watch": "cds watch",
+     "build": "cds build"
+   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Geooorg/odata-sap-cap-test.git"
@@ -18,7 +20,12 @@
     "url": "https://github.com/Geooorg/odata-sap-cap-test/issues"
   },
   "homepage": "https://github.com/Geooorg/odata-sap-cap-test#readme",
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
   "devDependencies": {
-    "@sap/cds-dk": "^8.7.1"
+    "@sap/cds-dk": "^7",
+    "sqlite3": "^5"
   }
 }
