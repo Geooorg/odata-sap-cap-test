@@ -1,4 +1,4 @@
-namespace RealEstateService;
+namespace RealEstateModel;
 
 entity Users {
     key ID   : Integer;
