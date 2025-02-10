@@ -8,6 +8,16 @@
     "watch": "cds watch",
     "build": "cds build"
   },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "sqlite.db"
+        }
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Geooorg/odata-sap-cap-test.git"
