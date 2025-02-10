@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 1001,
+    "Type": "Haus",
+    "ConstructionYear": 1990,
+    "Owner_ID": 1
+  },
+  {
+    "ID": 1002,
+    "Type": "Wohnung",
+    "ConstructionYear": 2005,
+    "Owner_ID": 1
+  },
+  {
+    "ID": 1003,
+    "Type": "Villa",
+    "ConstructionYear": 2015,
+    "Owner_ID": 2
+  }
+]
