@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cds run",
     "watch": "cds watch",
-    "build": "cds build"
+    "build": "cds build",
+    "deploy": "cds deploy --to sqlite"
   },
   "cds": {
     "requires": {
