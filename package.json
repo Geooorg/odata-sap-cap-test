@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "start": "cds run",
-     "watch": "cds watch",
-     "build": "cds build"
-   },
+    "start": "cds run",
+    "watch": "cds watch",
+    "build": "cds build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Geooorg/odata-sap-cap-test.git"
@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "@sap/cds-dk": "^7",
-    "sqlite3": "^5"
+    "sqlite3": "^5.1.7"
   }
 }
