@@ -9,6 +9,10 @@ cds watch
 
 ## Retrieving users
 
+### Generate EDMX
+
+curl 'http://localhost:4004/odata/v4/real-estate/$metadata'  
+
 ### Retrieve all users
 curl http://localhost:4004/odata/v4/real-estate/Users
 
