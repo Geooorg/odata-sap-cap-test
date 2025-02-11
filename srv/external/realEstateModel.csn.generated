@@ -1,0 +1,60 @@
+{
+ "meta": {
+  "creator": "cds-dk 7.9.9"
+ },
+ "$version": "2.0",
+ "definitions": {
+  "RealEstateModel.Users": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "elements": {
+    "ID": {
+     "key": true,
+     "type": "cds.Integer",
+     "notNull": true
+    },
+    "Name": {
+     "type": "cds.LargeString"
+    },
+    "Email": {
+     "type": "cds.LargeString"
+    },
+    "Properties": {
+     "type": "cds.Association",
+     "@cds.ambiguous": "missing on condition?",
+     "target": "RealEstateModel.Properties",
+     "cardinality": {
+      "max": "*"
+     },
+     "keys": []
+    }
+   }
+  },
+  "RealEstateModel.Properties": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "elements": {
+    "ID": {
+     "key": true,
+     "type": "cds.Integer",
+     "notNull": true
+    },
+    "Type": {
+     "type": "cds.LargeString"
+    },
+    "ConstructionYear": {
+     "type": "cds.Integer"
+    },
+    "Owner_ID": {
+     "type": "cds.Integer"
+    }
+   }
+  },
+  "RealEstateModel": {
+   "kind": "service",
+   "@cds.external": true
+  }
+ }
+}

@@ -16,6 +16,10 @@
         "credentials": {
           "database": "sqlite.db"
         }
+      },
+      "RealEstateModel": {
+        "kind": "odata",
+        "model": "srv/external/RealEstateModel"
       }
     }
   },

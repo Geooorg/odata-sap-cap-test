@@ -11,7 +11,7 @@ cds watch
 
 ### Generate EDMX
 
-curl 'http://localhost:4004/odata/v4/real-estate/$metadata'  
+curl 'http://localhost:4004/odata/v4/real-estate/$metadata' > RealEstateModel.xml
 
 ### Retrieve all users
 curl http://localhost:4004/odata/v4/real-estate/Users
@@ -26,3 +26,10 @@ curl 'http://localhost:4004/odata/v4/real-estate/Users?$filter=ID%20eq%201&$sele
 
 ### $expand - select Properties that belong to this user
 curl 'http://localhost:4004/odata/v4/real-estate/Users?$filter=ID%20eq%201&$expand=Properties'
+
+
+# CDS schema aus EDMX generieren
+
+`cds import RealEstateModel.edmx`
+
+`cds compile ./srv/external/realEstateModel.csn  --to cdl > schema.cds`
